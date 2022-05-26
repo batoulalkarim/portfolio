@@ -68,13 +68,15 @@
 
 .splitbio {
     width: 55vh;
-    /* margin-left: 12vh; */
+    padding-right: 25px;
     text-align: left;
-    line-height: 1.5;
+    /* line-height: 1.5; */
 }
 
 .bioimages {
     width: 55vh;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .socialMedia {
     text-align: center;
