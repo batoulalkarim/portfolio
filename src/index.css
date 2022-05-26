@@ -85,6 +85,10 @@
     padding-top: 4vh;
 }
 
+.socials {
+    margin-left: 50px;
+}
+
 .socialMedia > a {
     padding-left: 10px;
 }

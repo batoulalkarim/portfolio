@@ -30,22 +30,15 @@ function Intro(){
                         is equipped with a strong and supportive team of devs and looking forward to 
                         growing with the right team! 
                         <br />
+                       
                         <p className="socialMedia">CONNECT WITH BATOUL</p>
-                        <a className="socialMedia" href="https://www.freepnglogos.com/pics/logo-instagram-png" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/download-instagram-png-logo-20.png" width="40" alt="Download instagram png logo" /></a> 
-                        <a className="socialMedia" href="http://www.twitter.com/batoulalkarim"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-icon-png-logo-2.png" width="40" alt="twitter bird icon png logo" className="socials"/></a>
-                            
-                        <a className="socialMedia" href="https://www.github.com/batoulalkarim" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" width="40" alt="512x512 logo github icon" className="socials"/></a>
-                   
+                        <span className="socials">
+                        <a  href="https://www.freepnglogos.com/pics/logo-instagram-png" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/download-instagram-png-logo-20.png" width="40" alt="Download instagram png logo" /></a> 
+                        <a  href="http://www.twitter.com/batoulalkarim"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-icon-png-logo-2.png" width="40" alt="twitter bird icon png logo" className="socials"/></a> 
+                        <a  href="https://www.github.com/batoulalkarim" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" width="40" alt="512x512 logo github icon" className="socials"/></a>
+                        </span>
                     </span>
-                    {/* <div className="socialMedia"> */}
-                        {/* <p>CONNECT WITH BATOUL</p> */}
-                        {/* <br />
-                        <a href="https://www.freepnglogos.com/pics/logo-instagram-png" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/download-instagram-png-logo-20.png" width="40" alt="Download instagram png logo" /></a> 
-                        <a href="http://www.twitter.com/batoulalkarim"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-icon-png-logo-2.png" width="40" alt="twitter bird icon png logo" className="socials"/></a>
-                            
-                        <a href="https://www.github.com/batoulalkarim" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" width="40" alt="512x512 logo github icon" className="socials"/></a>
-                    </div> */}
-                {/* </div> */}
+
                 <div className="bioimages">
                     <img className="selfie" src="https://media-exp1.licdn.com/dms/image/C4E03AQEpXaYHJ8HE6g/profile-displayphoto-shrink_800_800/0/1592245263379?e=1658966400&v=beta&t=PjGoaW9WvkEyV1XGYKD-VB-y1i787eNKwmHiQYmolLc" alt="batoul" />
                 </div>
@@ -55,8 +48,7 @@ function Intro(){
             </div>
             <div className="contact">
                 <div className="center">
-                <h2>CONTACT ME</h2>
-                <h1>*insert contact form here*</h1>
+                <h2 className="center">CONTACT ME</h2>
                 </div>
                 <div>
                 <iframe
