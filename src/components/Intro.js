@@ -21,7 +21,7 @@ function Intro(){
                 <span>DEVELOPER</span>
             </div>
             <div className="bio">
-                <div>
+                {/* <div> */}
                     <p className="splitbio">
                         <strong>Batoul Alkarim</strong> graduated from Flatiron School with a certificate in 
                         Software Engineering. She took the Fullstack course and now programs 
@@ -37,7 +37,7 @@ function Intro(){
                         <a href="http://www.twitter.com/batoulalkarim"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-icon-png-logo-2.png" width="40" alt="twitter bird icon png logo" className="socials"/></a>
                             
                         <a href="https://www.github.com/batoulalkarim" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" width="40" alt="512x512 logo github icon" className="socials"/></a>
-                    </div>
+                    {/* </div> */}
                 </div>
                 <div className="bioimages">
                     <img className="selfie" src="https://media-exp1.licdn.com/dms/image/C4E03AQEpXaYHJ8HE6g/profile-displayphoto-shrink_800_800/0/1592245263379?e=1658966400&v=beta&t=PjGoaW9WvkEyV1XGYKD-VB-y1i787eNKwmHiQYmolLc" alt="batoul" />
@@ -54,7 +54,7 @@ function Intro(){
                 <div>
                 <iframe
                     title="map"
-                    width="650"
+                    width="550"
                     height="550"
                     frameborder="0" 
                     // {style="border:0"}
