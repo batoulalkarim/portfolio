@@ -49,6 +49,7 @@ function Intro(){
             <div className="contact">
                 <div className="center">
                 <h2>CONTACT ME</h2>
+                <h1>*insert contact form here*</h1>
                 </div>
                 <div>
                 <iframe
