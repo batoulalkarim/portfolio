@@ -5,6 +5,8 @@ import 'animate.css'
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
 import Swal from 'sweetalert2'
 import emailjs from '@emailjs/browser'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { Carousel } from 'react-responsive-carousel';
 
 
 function Intro(){
@@ -63,6 +65,7 @@ function Intro(){
                         <a  href="https://www.freepnglogos.com/pics/logo-instagram-png" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/download-instagram-png-logo-20.png" width="40" alt="Download instagram png logo" /></a> 
                         <a  href="http://www.twitter.com/batoulalkarim"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-icon-png-logo-2.png" width="40" alt="twitter bird icon png logo" className="socials"/></a> 
                         <a  href="https://www.github.com/batoulalkarim" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" width="40" alt="512x512 logo github icon" className="socials"/></a>
+                        <a href="mailto:batoulalkarim1@gmail.com" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/gmail-email-logo-png-12.png" width="40" alt="gmail, email logo png" className="socials"/></a>
                         </span>
                     </span>
 
@@ -72,6 +75,28 @@ function Intro(){
             </div>
             <div className="portfolio">
                 <h2>BATOUL MAKES COOL APPLICATIONS </h2>
+                <div className="carousel">
+                <Carousel
+                    centerMode={true}
+                    centerSlidePercentage={100}
+                >
+                    <div className="carousel_item">
+                        <p className="desc">TechMate - A Dating App For Developers</p>
+                        <img className="carousel_img" src="/images/techmate.png" />
+                        {/* <p className="legend">An app to help you get food delivered faster!</p> */}
+                    </div>
+                    <div className="carousel_item">
+                        <p className="desc">Status - A Social Media App Designed to Validate Your Ego</p>
+                        <img src="/images/status.png" />
+                        {/* <p className="legend">Legend 2</p> */}
+                    </div>
+                    <div className="carousel_item">
+                        <p className="desc">LivWell - A Platform to Help You Sign Up for Volunteering Opportunities</p>
+                        <img src="/images/livwell.png" />
+                        {/* <p className="legend">Legend 3</p> */}
+                    </div>
+                </Carousel>
+                </div>
             </div>
             <div className="contact">
                 <div className="center">
