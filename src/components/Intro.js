@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import 'animate.css'
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
+// import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import { Form, Input, TextArea, Button } from 'semantic-ui-react';
+
 
 
 function Intro(){
+
+    function handleOnSubmit(){
+
+    }
    
     return(
         <div>
@@ -49,6 +55,39 @@ function Intro(){
             <div className="contact">
                 <div className="center">
                 <h2 className="center">CONTACT ME</h2>
+                <div className="form">
+                <Form onSubmit={handleOnSubmit}>
+                    <Form.Field
+                    id='form-input-control-email'
+                    control={Input}
+                    label='Email'
+                    name='user_email'
+                    placeholder='Email…'
+                    required
+                    icon='mail'
+                    iconPosition='left'
+                    />
+                    <Form.Field
+                    id='form-input-control-last-name'
+                    control={Input}
+                    label='Name'
+                    name='user_name'
+                    placeholder='Name…'
+                    required
+                    icon='user circle'
+                    iconPosition='left'
+                    />
+                    <Form.Field
+                    id='form-textarea-control-opinion'
+                    control={TextArea}
+                    label='Message'
+                    name='user_message'
+                    placeholder='Message…'
+                    required
+                    />
+                    <Button type='submit' color='green'>Submit</Button>
+                </Form>
+                </div>
                 </div>
                 <div>
                 <iframe

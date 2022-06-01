@@ -1,6 +1,8 @@
 import './App.css';
 import Intro from './components/Intro';
+import React from 'react';
 // import Nav from './components/Nav';
+import 'semantic-ui-css/semantic.min.css';
 import Projects from './components/Projects';
 import Publications from './components/Publications';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
