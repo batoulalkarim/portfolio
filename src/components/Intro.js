@@ -3,14 +3,35 @@ import { Link } from 'react-router-dom';
 import 'animate.css'
 // import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
-
+import Swal from 'sweetalert2'
+import emailjs from '@emailjs/browser'
 
 
 function Intro(){
 
-    function handleOnSubmit(){
+    const SERVICE_ID = "service_ghyfxro";
+    const TEMPLATE_ID = "template_bfxojow";
+    const USER_ID = "G0wXrx2ISswCD_Kbu";
 
-    }
+    const handleOnSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+          .then((result) => {
+            console.log(result.text);
+            Swal.fire({
+              icon: 'success',
+              title: 'Message Sent Successfully'
+            })
+          }, (error) => {
+            console.log(error.text);
+            Swal.fire({
+              icon: 'error',
+              title: 'Ooops, something went wrong',
+              text: error.text,
+            })
+          });
+        e.target.reset()
+      };
    
     return(
         <div>
@@ -61,7 +82,7 @@ function Intro(){
                     id='form-input-control-email'
                     control={Input}
                     label='Email'
-                    name='user_email'
+                    name='from_email'
                     placeholder='Email…'
                     required
                     icon='mail'
@@ -71,7 +92,7 @@ function Intro(){
                     id='form-input-control-last-name'
                     control={Input}
                     label='Name'
-                    name='user_name'
+                    name='from_name'
                     placeholder='Name…'
                     required
                     icon='user circle'
@@ -81,7 +102,7 @@ function Intro(){
                     id='form-textarea-control-opinion'
                     control={TextArea}
                     label='Message'
-                    name='user_message'
+                    name='message'
                     placeholder='Message…'
                     required
                     />
