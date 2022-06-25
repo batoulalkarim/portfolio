@@ -64,6 +64,7 @@
     display: flex;
     justify-content: space-between;
     padding: 50px;
+    border-bottom: 5px solid rgb(163, 231, 248);
 }
 
 .splitbio {
@@ -135,12 +136,15 @@
     margin-right: auto;    
 }
 
-
+.title_center {
+    text-align: center;
+}
 .form {
     text-align: center;
     max-width: 300px;
     margin: 20px auto;
   }
+
   Form {
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -148,13 +152,16 @@
   }
 
   .carousel_item{
-      border: solid;
+      border: 5px solid white;
+      border-radius: 10px;
+      background-color: white;
       width: 450px;
-      height: 350px;
+      height: 375px;
       margin-right: auto;
       margin-left: auto;
       /* padding-top: 30px; */
   }
+
 
  .desc {
      background-color: white;
@@ -162,4 +169,69 @@
      margin: 0;
      font-family: jwf, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-weight: bolder;
+    border-radius: 2px;
  }
+
+ .publications {
+     background-color: rgb(175, 234, 241);
+     height: 100vh;
+ }
+
+ .projects {
+     background-color: lavender;
+     height: 100vh;
+ }
+
+ .column {
+     border: 1px solid black;
+     width: 40vh;
+     padding: 10px;
+     margin-top: 10px;
+     background-color: white;
+     margin-left: auto;
+     margin-right: auto;
+     /* display: flex; */
+     /* flex-direction: row; */
+ }
+
+ .card {
+     padding: 30px;
+ }
+ .postimg {
+     width: auto;
+     border: 1px solid rgb(253, 254, 255);
+     height: auto;
+     width: 30vh;
+     margin-left: 3.5vh;
+     margin-right: auto;
+     margin-top: 2vh;
+ }
+
+ .projects {
+     width: 100%;
+ }
+
+ .projects_body {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-auto-rows: auto;
+     text-align: center;
+     justify-content: space-between;
+     margin-left: 5vh;
+     grid-gap: 1rem;
+ }
+ .project_card {
+     width: 30vh;
+     padding-top: 20px;
+ }
+ /* .cards {
+ 
+    display: grid;
+     
+    grid-template-columns: repeat(3, 1fr);
+     
+    grid-auto-rows: auto;
+     
+    grid-gap: 1rem;
+     
+    } */

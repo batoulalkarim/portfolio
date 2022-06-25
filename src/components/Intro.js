@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import 'animate.css'
-// import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
 import Swal from 'sweetalert2'
 import emailjs from '@emailjs/browser'
@@ -37,11 +35,6 @@ function Intro(){
    
     return(
         <div>
-            <nav className="topbar">
-                <span>Batoul Alkarim</span>
-                <Link to="/publications">PUBLICATIONS</Link>
-                <Link to="/projects">PROJECTS</Link>
-            </nav>
             <div className="home">
                 <span className="batoul">BATOUL</span><br />
                 <span className="cooleffect">ALKARIM</span><br />
@@ -50,7 +43,6 @@ function Intro(){
                 <span>DEVELOPER</span>
             </div>
             <div className="bio">
-                {/* <div> */}
                     <span className="splitbio">
                         <strong>Batoul Alkarim</strong> graduated from Flatiron School with a certificate in 
                         Software Engineering. She took the Fullstack course and now programs 
@@ -82,7 +74,7 @@ function Intro(){
                 >
                     <div className="carousel_item">
                         <p className="desc">TechMate - A Dating App For Developers</p>
-                        <img className="carousel_img" src="/images/techmate.png" />
+                        <img className="carousel_img" src="/images/techmate.png"/>
                         {/* <p className="legend">An app to help you get food delivered faster!</p> */}
                     </div>
                     <div className="carousel_item">
