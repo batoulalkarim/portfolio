@@ -7,11 +7,13 @@ import Projects from './components/Projects';
 import Publications from './components/Publications';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+
 function App() {
   return (
     <div className="App">
+      {/* <h1>hello</h1> */}
       <BrowserRouter>
-      <Nav />
+        <Nav />
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/publications" element={<Publications />} />

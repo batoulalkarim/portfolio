@@ -5,6 +5,7 @@ import Swal from 'sweetalert2'
 import emailjs from '@emailjs/browser'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
+import ReactPlayer from 'react-player'
 
 
 function Intro(){
@@ -35,6 +36,28 @@ function Intro(){
    
     return(
         <div>
+            <div className="secretMessage">
+                you found the secret message!! ello!! follow me on instagram ;)
+            </div>
+            <div className="video">
+                <div className="reactPlayer">
+                <ReactPlayer 
+                url="https://static.videezy.com/system/resources/previews/000/043/309/original/200128_03_Saber-rectangle-blue-pink-seamless-loop.mp4" 
+                playing={true}
+                loop={true}
+                width="100%"
+                />
+                </div>
+                <div className="home">
+                <span className="batoul">BATOUL</span><br />
+                <span className="cooleffect">ALKARIM</span><br />
+                <span>IS AN </span> 
+                <span className="animate__animated">AWESOME</span> <br />
+                <span>DEVELOPER</span>
+            </div>
+            </div>
+            {/* <div className="shell">
+                <div className="middle">
             <div className="home">
                 <span className="batoul">BATOUL</span><br />
                 <span className="cooleffect">ALKARIM</span><br />
@@ -42,31 +65,43 @@ function Intro(){
                 <span className="animate__animated">AWESOME</span> <br />
                 <span>DEVELOPER</span>
             </div>
+            </div>
+            </div> */}
             <div className="bio">
-                    <span className="splitbio">
-                        <strong>Batoul Alkarim</strong> graduated from Flatiron School with a certificate in 
-                        Software Engineering. She took the Fullstack course and now programs 
-                        with JavaScript and Ruby, and prefers frameworks like React and Rails.
-                        As an Entry Level Junior Dev, Batoul is excited to work for a company that 
-                        is equipped with a strong and supportive team of devs and looking forward to 
-                        growing with the right team! 
-                        <br />
-                       
-                        <p className="socialMedia">CONNECT WITH BATOUL</p>
-                        <span className="socials">
-                        <a  href="https://www.freepnglogos.com/pics/logo-instagram-png" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/download-instagram-png-logo-20.png" width="40" alt="Download instagram png logo" /></a> 
-                        <a  href="http://www.twitter.com/batoulalkarim"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-icon-png-logo-2.png" width="40" alt="twitter bird icon png logo" className="socials"/></a> 
-                        <a  href="https://www.github.com/batoulalkarim" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" width="40" alt="512x512 logo github icon" className="socials"/></a>
-                        <a href="mailto:batoulalkarim1@gmail.com" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/gmail-email-logo-png-12.png" width="40" alt="gmail, email logo png" className="socials"/></a>
-                        </span>
-                    </span>
-
+            <h4 className="right">A LITTLE ABOUT BATOUL:</h4>
+                <div className="bio_middle">
+                <span className="i">
+                <div className="o">
+                <div className="circles">
                 <div className="bioimages">
                     <img className="selfie" src="https://media-exp1.licdn.com/dms/image/C4E03AQEpXaYHJ8HE6g/profile-displayphoto-shrink_800_800/0/1592245263379?e=1658966400&v=beta&t=PjGoaW9WvkEyV1XGYKD-VB-y1i787eNKwmHiQYmolLc" alt="batoul" />
                 </div>
+                </div>
+                </div>
+                </span>
+                    <span className="splitbio">
+                        <div className="ab">
+                        <strong>Batoul Alkarim</strong> is a Full Stack Software Engineer. She successfully completed Flatirons Software Engineering Bootcamp and now programs 
+                        with JavaScript and Ruby, she also enjoys working with React and Ruby on Rails.
+                        As an Entry Level Junior Dev, Batoul is excited to work for a company that 
+                        is equipped with a strong and supportive team of devs and looking forward to 
+                        growing with the right team! 
+                        </div>
+                        <br />
+                       
+                        <p className="socialMedia">SOCIAL MEDIA</p>
+                        <span>
+                        <a className="socials" href="https://www.instagram.com/batoulalkarim/" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/download-instagram-png-logo-20.png" width="40" alt="Download instagram png logo" /></a> 
+                        <a className="socials" href="https://twitter.com/batoulalkarim" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" width="45" alt="twitter bird symbols png logo" /></a>
+                        <a className="github" href="https://www.github.com/batoulalkarim" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" width="40" alt="512x512 logo github icon" className="socials"/></a>
+                        {/* <a href="mailto:batoulalkarim1@gmail.com" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/gmail-email-logo-png-12.png" width="40" alt="gmail, email logo png" className="socials"/></a> */}
+                        </span>
+                    </span>
+
+                </div>
             </div>
-            <div className="portfolio">
-                <h2>BATOUL MAKES COOL APPLICATIONS </h2>
+            <div id="portfolio">
+                <h2 className="apps">BATOUL MAKES COOL APPLICATIONS </h2>
                 <div className="carousel">
                 <Carousel
                     centerMode={true}
@@ -75,17 +110,14 @@ function Intro(){
                     <div className="carousel_item">
                         <p className="desc">TechMate - A Dating App For Developers</p>
                         <img className="carousel_img" src="/images/techmate.png"/>
-                        {/* <p className="legend">An app to help you get food delivered faster!</p> */}
                     </div>
                     <div className="carousel_item">
                         <p className="desc">Status - A Social Media App Designed to Validate Your Ego</p>
                         <img src="/images/status.png" />
-                        {/* <p className="legend">Legend 2</p> */}
                     </div>
                     <div className="carousel_item">
                         <p className="desc">LivWell - A Platform to Help You Sign Up for Volunteering Opportunities</p>
                         <img src="/images/livwell.png" />
-                        {/* <p className="legend">Legend 3</p> */}
                     </div>
                 </Carousel>
                 </div>
@@ -132,11 +164,11 @@ function Intro(){
                     title="map"
                     width="500"
                     height="550"
-                    frameborder="0" 
+                    frameBorder="0" 
                     // {style="border:0"}
-                    referrerpolicy="no-referrer-when-downgrade"
+                    referrerPolicy="no-referrer-when-downgrade"
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBIB7cKO8u35pCskKTCCvZwSrh9cIQ5WtE&q=Manhattan, New+York"
-                    allowfullscreen>
+                    allowFullScreen>
                     </iframe>
                     </div>
             </div>
