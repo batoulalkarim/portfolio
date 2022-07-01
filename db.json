@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "id": 1, 
+            "name": "Coinbase Clone",
+            "tech": "Metamask - Next.js - Sanity.io - thirdweb - Vercel - React",
+            "description": "A Coinbase Clone that allows you to send money to different MetaMask wallets! The front end is built with Next.js and the back end is Sanity.io, I used styled components for the styling and used thirdweb to handle the blockchain. I also used MetaMask for the authentication and deployed using Vercel! Let me know what you think!",
+            "photo1": "",
+            "photo2": "",
+            "photo3": "",
+            "github": ""
+        },
+        {
+            "id": 2, 
+            "name": "OpenSea Clone",
+            "tech": "thirdweb - Graph Relational Object Query (GROQ) - Sanity API - Tailwind CSS",
+            "description": "",
+            "photo1": "",
+            "photo2": "",
+            "photo3": "",
+            "github": ""
+        },
+        {
+            "id": 3, 
+            "name": "TechMate",
+            "tech": "React - Ruby on Rails - NodeJS - Postgresql",
+            "description": "A Tinder clone built just for developers! Using self tables.. etc",
+            "photo1": "/images/techmate.png",
+            "photo2": "",
+            "photo3": "",
+            "github": ""
+        }
+    ]
+}

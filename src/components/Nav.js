@@ -7,7 +7,7 @@ function Nav(){
         <div className="topbar">
             <span>Batoul Alkarim</span>
             {/* <a href="/">HOME</a> */}
-            <a href="publications">PUBLICATIONS</a>
+            <a href="#publications">PUBLICATIONS</a>
             <a href="#portfolio">PROJECTS</a>
         </div>
     )

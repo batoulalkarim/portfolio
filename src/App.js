@@ -1,4 +1,3 @@
-import './App.css';
 import Intro from './components/Intro';
 import React from 'react';
 import Nav from './components/Nav';

@@ -20,9 +20,11 @@ function Publications(){
 
 
     return(
-        <div className="publications">
+        <div id="publications" className="bg">
             <h1 className="title_center">PUBLICATIONS</h1>
+            <span className="publications">
             {showCards()}
+            </span>
         </div>
     )
 }
