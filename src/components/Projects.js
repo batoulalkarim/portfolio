@@ -5,7 +5,7 @@ function Projects(){
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/projects')
+        fetch('/projects')
         .then(res => res.json())
         .then(projects => setProjects(projects))
     }, [])
