@@ -15,10 +15,10 @@
             "name": "OpenSea Clone",
             "tech": "thirdweb - Graph Relational Object Query (GROQ) - Sanity API - Tailwind CSS",
             "description": "",
-            "photo1": "",
+            "photo1": "/images/openseaHomepage.png",
             "photo2": "",
             "photo3": "",
-            "github": ""
+            "github": "https://github.com/batoulalkarim/Opensea-Blockchain-Clone"
         },
         {
             "id": 3, 
@@ -29,6 +29,26 @@
             "photo2": "",
             "photo3": "",
             "github": ""
+        },
+        {
+            "id": 2, 
+            "name": "OpenSea Clone",
+            "tech": "thirdweb - Graph Relational Object Query (GROQ) - Sanity API - Tailwind CSS",
+            "description": "",
+            "photo1": "",
+            "photo2": "",
+            "photo3": "",
+            "github": "https://github.com/batoulalkarim/Opensea-Blockchain-Clone"
+        },
+        {
+            "id": 2, 
+            "name": "OpenSea Clone",
+            "tech": "thirdweb - Graph Relational Object Query (GROQ) - Sanity API - Tailwind CSS",
+            "description": "",
+            "photo1": "",
+            "photo2": "",
+            "photo3": "",
+            "github": "https://github.com/batoulalkarim/Opensea-Blockchain-Clone"
         }
     ]
 }
