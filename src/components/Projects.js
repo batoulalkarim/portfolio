@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
+import db from '../db.json'
 
 function Projects(){
-    const [projects, setProjects] = useState([]);
-
-    useEffect(() => {
-        fetch('/projects')
-        .then(res => res.json())
-        .then(projects => setProjects(projects))
-    }, [])
+    const projects = db.projects 
+    console.log(projects)
 
     
     function showCards(){
