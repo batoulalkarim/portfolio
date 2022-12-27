@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'BIZ UDPGothic';
+  src: url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap');
+}
+
 * {
   margin: 0;
   font-family: jwf, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -410,3 +415,26 @@ form {
   width: 40vh;
   /* height: 30vh; */
 }
+
+.comingSoonContainer {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.csSecond {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cSText {
+  color: white;
+  font-size: 60px;
+  line-height: 72px;
+  font-family: 'BIZ UDPGothic', sans-serif;
+}
+
